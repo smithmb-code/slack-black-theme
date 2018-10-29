@@ -47,7 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
       background-color: #222 !important;
    }
    span.c-message__body, a.c-message__sender_link, span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption, div.p-message_pane__foreword__description span {
-      color: #B0B !important;
+      color: #BBB !important;
+   }
+   .c-scrollbar__hider {
+      background: #444 !important;
+   }
+   .p-message_pane__foreword__description, .p-message_pane__limited_history_alert {
+      color: #888 !important
+   }
+   .c-member_slug--link {
+      color: #AAA;
+      background: #666;
    }
 `
 
