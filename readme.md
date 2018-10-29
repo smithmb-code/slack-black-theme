@@ -37,12 +37,19 @@ document.addEventListener("DOMContentLoaded", function() {
    let customCustomCSS = `
    :root {
       /* Modify these to change your theme colors: */
-      --primary: #09F;
-      --text: #CCC;
-      --background: #080808;
-      --background-elevated: #222;
+      --primary: #CCC;
+      --text: #999;
+      --background: #222;
+      --background-elevated: #444;
    }
-   `
+
+   .c-message, .c-virtual_list__item {
+      background-color: #222 !important;
+   }
+   span.c-message__body, a.c-message__sender_link, span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption, div.p-message_pane__foreword__description span {
+      color: #B0B !important;
+   }
+`
 
    // Insert a style tag into the wrapper view
    cssPromise.then(css => {
